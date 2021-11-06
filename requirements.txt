@@ -1,2 +1,4 @@
 Django
 shortuuid
+gunicorn
+django-heroku
