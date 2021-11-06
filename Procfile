@@ -1,1 +1,1 @@
-web: gunicorn namesite.wsgi
+web: gunicorn namesite.namesite.wsgi
