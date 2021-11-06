@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Главная</title>
+</head>
+
+<body>
+
+  <table style="display: inline-block; max-width: 30%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;">
+    {% for s in short %}
+    <tr>
+      <td><a href="/{{s}}">{{host}}/{{ s }}</a></td>
+    </tr>
+    {% endfor %}
+  </table>
+
+  <table style="display: inline-block; max-width: 30%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;">
+    
+    {% for l in long %}
+    <tr>
+      <td><a href="{{ l }}">{{ l }}</a></td>
+    </tr>
+    {% endfor %}
+  </table>
+
+  <div style='display: block'>
+    <button><a href="/logout">Выход</a>
+      <button><a href="/">Назад</a>
+  </div>
+</body>
+
+</html>

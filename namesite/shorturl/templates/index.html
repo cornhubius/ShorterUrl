@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Главная</title>
+</head>
+
+<body>
+
+  {% if user.is_authenticated %}
+  Привет, {{ user.username }}!
+  <br>
+  <br>
+  <button style="display: flex;"><a href="/create_short">Укоротить сслыку</a></button>
+  <br>
+  <button style="display: flex;"><a href="/link_list">Список ссылок</a></button>
+  <br>
+  <button style="display: flex;"><a href="/logout">Выход</a></button>
+  <br>
+  {% else %}
+  <button style="display: flex;"><a href="/login">Вход</a></button>
+  <br>
+  <button style="display: flex;"><a href="/register">Регистрация</a></button>
+  <br>
+  {% endif %}
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Сократить</title>
+</head>
+
+<body>
+  {% if short %}
+  <a href="/{{short}}">{{host}}{{short}}</a>
+  {%else%}
+  <form action="{% url 'short' %}" method='post'>
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit">Укоротить</button>
+  </form>
+  {% endif %}
+  <button style="display: inline;"><a href="/logout">Выход</a></button>
+  <button style="display: inline;"><a href="/">Главная</a></button>
+
+</body>
+
+</html>
