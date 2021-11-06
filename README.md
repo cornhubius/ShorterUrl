@@ -1,5 +1,7 @@
 # ShorterUrl
 
+!This is a test case for one company. But I want to improve it in the future.!
+
 site: https://shorterurldjango.herokuapp.com/
 
 ShorterUrl at is a free tool to shorten a URL or reduce a link
